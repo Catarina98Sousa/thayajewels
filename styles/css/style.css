@@ -1,18 +1,209 @@
-/* Error: Undefined variable.
- *   ,
- * 3 | $bgfooter: $bgfooter;
- *   |            ^^^^^^^^^
- *   '
- *   styles\scss\_variables.scss 3:12  @import
- *   styles\scss\index.scss 2:9        root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 3 \2502  $bgfooter: $bgfooter;\d\a   \2502             ^^^^^^^^^\a   \2575 \a   styles\\scss\\_variables.scss 3:12  @import\a   styles\\scss\\index.scss 2:9        root stylesheet";
+@charset "UTF-8";
+/*imports*/
+/*background */
+/*color*/
+/*size fonts*/
+/*color fonts*/
+/*reset styles*/
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
+
+/* list*/
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/*links*/
+a {
+  text-decoration: none;
+  /*&:hover {
+      text-decoration: underline;
+  }*/
+}
+
+/*footer*/
+/*footer*/
+/*tentar perceber o porque de estar em cima*/
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  height: 350px;
+  font-size: 16px;
+  background-color: #212121;
+}
+
+.text {
+  position: relative;
+  left: 182px;
+  top: -150px;
+  width: 300px;
+  padding: 25px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.footer-menu {
+  bottom: 20px;
+  width: 300px;
+  margin: 100px;
+  padding: 49px;
+}
+
+.copyright {
+  text-align: center;
+}
+
+body {
+  width: 100%;
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  justify-content: center;
+  position: absolute;
+  background: #fff;
+}
+
+a {
+  color: black;
+  font-weight: 700;
+}
+
+/*nav & header*/
+/*fase de experimentaçao. posiçao ainda errada ver mais tarde*/
+nav {
+  font-size: 18px;
+}
+
+nav.text-right {
+  width: 100%;
+  text-align: right;
+  margin-top: 6px;
+  margin-right: 40px;
+}
+
+.extra {
+  width: 14px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: fixed;
+  margin-top: -8px;
+  margin-left: -8px;
+  width: 100%;
+  height: 93px;
+  background-color: rgb(174, 210, 242);
+  z-index: 20;
+}
+
+.geralmenu {
+  position: relative;
+  top: -10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+}
+
+/*problema com posiçao dos icons ver mais tarde*/
+.icon-menu {
+  margin-right: 40px;
+}
+
+img.icon {
+  width: 50px;
+  padding-left: 10px;
+}
+
+/*login/sign up*/
+/*yet to be done*/
+.form-login {
+  display: none;
+  width: 200px;
+}
+
+.pass {
+  color: rgb(87, 193, 255);
+}
+
+.send {
+  background-color: skyblue;
+}
+
+.send:hover {
+  color: #fff;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+/*content home page*/
+.main {
+  width: 100%;
+  margin-right: 215px;
+  margin-left: 215px;
+  margin-top: 100px;
+  max-width: fit-content;
+}
+
+.section1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.title-primary {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  border-radius: 30px;
+  border: 5px solid #aed2f2;
+  color: #212121;
+  background-color: #aed2f2;
+}
+
+.text {
+  margin-top: 150px;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+a.plus {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 30px;
+  border: 5px solid #aed2f2;
+  color: #212121;
+  background-color: #aed2f2;
+}
+
+.section2 {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  height: 560px;
+}
+.section2 img {
+  width: 260px;
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
