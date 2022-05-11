@@ -1,0 +1,21 @@
+/*reset styles*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* list*/
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/*links*/
+a {
+    text-decoration: none;
+    /*&:hover {
+        text-decoration: underline;
+    }*/
+    //ver os a que quero underline ^ tem de ir no index.scss
+}

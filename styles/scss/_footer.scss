@@ -1,0 +1,31 @@
+/*footer*/
+/*footer*/ /*tentar perceber o porque de estar em cima*/
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 350px;
+    font-size: 16px;
+    background-color: $bgfooter;
+}
+
+.text {
+    position: relative;
+    left: 182px;
+    top: -150px;
+    width: 300px;
+    padding: 25px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.footer-menu {
+    bottom: 20px;
+    width: 300px;
+    margin: 100px;
+    padding: 49px;
+}
+
+.copyright {
+    text-align: center;
+}
