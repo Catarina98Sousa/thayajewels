@@ -9,7 +9,7 @@
 }
 .footer-coluna-left {
     width: 50%;
-    position: relative;
+    left: 5vw;
 }
 .footer-coluna-right {
     width: 50%;
@@ -17,7 +17,7 @@
 
 .text {
     padding: 25px;
-    padding-left: 180px;
+    padding-left: 260px;
     font-weight: 600;
     font-size: 20px;
     color: $fontTextfooter;
@@ -29,7 +29,19 @@
         color: $fontTextfooter;
     }
 }
+.redessociais {
+    color: $fontTextfooter;
+    padding: 25px;
+}
+.metedospagamento {
+    color: $fontTextfooter;
+    padding: 25px;
+    padding-top: 0;
+}
 
 .copyright {
-    text-align: center;
+    position: relative;
+    left: 51vw;
+    color: $fontTextfooter;
+    bottom: 10vh;
 }
