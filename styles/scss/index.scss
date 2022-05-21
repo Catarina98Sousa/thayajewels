@@ -36,7 +36,6 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     position: fixed;
-    margin-left: -8px;
     width: 100%;
     height: 93px;
     background-color: rgb(174, 210, 242);
@@ -52,19 +51,26 @@ header {
     align-items: center;
 }
 .menu {
+    position: relative;
+    left: 70px;
+    gap: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     align-items: center;
-    width: 50%;
+    a {
+        font-size: 20px;
+    }
 }
 /*problema com posiçao dos icons ver mais tarde*/
 .icon-menu {
-    margin-right: 40px;
+    position: relative;
+    top: 5px;
+    right: 10px;
 }
 img.icon {
-    width: 50px;
-    padding-left: 10px;
+    width: 100%;
+    max-width: 55px;
+    padding-left: 17px;
 }
 
 /*login/sign up*/ /*yet to be done*/
@@ -88,9 +94,8 @@ img.icon {
 /*content home page*/
 
 .main {
-    width: 100%;
-    margin-right: 215px;
-    margin-left: 215px;
+    margin-right: 250px;
+    margin-left: 250px;
     margin-top: 100px;
     max-width: fit-content;
 }
@@ -101,9 +106,18 @@ img.icon {
     align-items: baseline;
     justify-content: space-between;
 }
+.promo-img {
+    width: 100%;
+    display: flex;
+    img {
+        width: 100%;
+        max-width: 510px;
+        gap: 2px;
+    }
+}
 
 .title-primary {
-    font-size: 20px;
+    font-size: 26px;
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
@@ -114,30 +128,107 @@ img.icon {
 }
 
 .text {
-    margin-top: 150px;
     text-align: justify;
-    margin-bottom: 50px;
 }
 
-a.plus {
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 30px;
-    border: 5px solid #aed2f2;
-    color: #212121;
-    background-color: #aed2f2;
+//category
+
+.category {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+
+    a.icon-category {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .colar {
+        font-size: 30px;
+        border-radius: 102px;
+        height: 140px;
+        background: linear-gradient(
+            109.15deg,
+            rgba(196, 196, 196, 0) 0%,
+            $colorP_red 100%
+        );
+        padding: 30px;
+        margin-bottom: 20px;
+        min-width: 280px;
+    }
+    .bracelet {
+        font-size: 30px;
+        border-radius: 102px;
+        height: 140px;
+        background: linear-gradient(
+            109.15deg,
+            rgba(196, 196, 196, 0) 0%,
+            $colorP_yellow 100%
+        );
+        padding: 30px;
+        min-width: 280px;
+        margin-bottom: 20px;
+    }
+    .rings {
+        font-size: 30px;
+        border-radius: 102px;
+        height: 140px;
+        background: linear-gradient(
+            109.15deg,
+            rgba(196, 196, 196, 0) 0%,
+            $colorP_blue 100%
+        );
+        padding: 30px;
+        min-width: 280px;
+        margin-bottom: 20px;
+    }
+    .earings {
+        font-size: 30px;
+        border-radius: 102px;
+        height: 140px;
+        background: linear-gradient(
+            109.15deg,
+            rgba(196, 196, 196, 0) 0%,
+            $colorP_green 100%
+        );
+        padding: 30px;
+        min-width: 280px;
+        margin-bottom: 20px;
+    }
 }
+
+//coletion
 
 .section2 {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-content: space-evenly;
-    height: 560px;
 
-    img {
-        width: 260px;
-        max-width: 100%;
+    .coletionimg {
+        position: relative;
+        width: 100%;
+        max-width: 260px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        &:after {
+            content: " ";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: all 1s;
+            -webkit-transition: all 1s;
+        }
+    }
+
+    .coletionimg:hover {
+        &:after {
+            opacity: 1;
+        }
     }
 }

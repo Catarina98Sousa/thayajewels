@@ -1,8 +1,19 @@
 /*detalhe de protudo*/
-.col {
-    text-align: right;
-    width: 50%;
+
+//conteiner
+.section-produt {
+    display: flex;
+    gap: 20px;
 }
-img.col {
-    width: 100%;
+//divisao conteiner
+.col-1 {
+    flex: 1;
+}
+.col-2 {
+    flex: 1;
+}
+
+/*tabela*/
+.table {
+    text-align: center;
 }

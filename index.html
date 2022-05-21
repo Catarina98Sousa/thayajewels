@@ -51,10 +51,10 @@
                         class="extra"
                         src="imagens/iconMenuHeader/Vector.svg"
                     />
-                    Lojas</a
-                >
+                    Lojas
+                </a>
                 |
-                <a href="/PT/">PT</a>
+                <a href="/PT/"> PT </a>
             </nav>
             <div class="geralmenu">
                 <div class="menu">
@@ -182,40 +182,101 @@
         </header>
         <div class="main">
             <!--imagem publicidade da marca linkado-->
-            <picture>
-                <source media="(min-width:650px)" srcset="imagens/news.jpg" />
-                <source media="(min-width:465px)" srcset="imagens/news2.jpg" />
-                <img src="imagens/news.jpg" style="width: 100%" />
+            <picture class="main-img">
+                <source
+                    media="(min-width:650px)"
+                    srcset="imagens/imgmain/news.jpg"
+                />
+                <source
+                    media="(min-width:465px)"
+                    srcset="imagens/imgmain/news2.jpg"
+                />
+                <img
+                    src="imagens/imgmain/news.jpg"
+                    style="width: 100%; max-width: 1080px"
+                />
             </picture>
 
             <div class="section1">
                 <h1 class="title-primary">promoções</h1>
-                <a href="#" class="plus">ver mais</a>
+                <a href="#" class="plus">ver mais ></a>
             </div>
             <br />
-            <img src="imagens/preço promo 1.png" />
-            <img src="imagens/preço promo 2.png" />
+            <div class="promo-img">
+                <img src="imagens/imgpromo/price_promo1.png" />
+                <img src="imagens/imgpromo/price_promo2.png" />
+            </div>
             <br />
             <div class="section1">
                 <h1 class="title-primary">categorias</h1>
-                <a href="#" class="plus">ver mais</a>
+                <a href="#" class="plus">ver mais ></a>
             </div>
             <br />
-            <!--icones a-->
+            <div class="category">
+                <div class="colar">
+                    <a href="#" class="icon-category">
+                        <p>Colares</p>
+                        <img src="imagens/iconcategory/Icon_colar_b.svg" />
+                    </a>
+                    <!--icones a-->
+                </div>
+                <div class="bracelet">
+                    <a href="#" class="icon-category">
+                        <p>Pulseiras</p>
+                        <img src="imagens/iconcategory/Icon_bracelet_b.svg" />
+                    </a>
+                </div>
+                <div class="rings">
+                    <a href="#" class="icon-category">
+                        <p>Aneis</p>
+                        <img src="imagens/iconcategory/Icon_ring_b.svg" />
+                    </a>
+                </div>
+                <div class="earings">
+                    <a href="#" class="icon-category">
+                        <p>Brincos</p>
+                        <img src="imagens/iconcategory/Icon_earings_b.svg" />
+                    </a>
+                </div>
+            </div>
             <div class="section1">
                 <h1 class="title-primary">coleções</h1>
-                <a href="#" class="plus">ver mais</a>
+                <a href="#" class="plus">ver mais ></a>
 
                 <!--imagens-->
                 <div class="section2">
-                    <img src="imagens/Group2.png" />
-                    <img src="imagens/Group3.png" />
-                    <img src="imagens/Group4.png" />
-                    <img src="imagens/Group5.png" />
-                    <img src="imagens/Group6.png" />
-                    <img src="imagens/Group7.png" />
-                    <img src="imagens/Group8.png" />
-                    <img src="imagens/Group9.png" />
+                    <img
+                        src="imagens/imgcoletion/img1_coupleRings.jpg"
+                        class="coletionimg"
+                    />
+                    <img
+                        src="imagens/imgcoletion/img2_geometric.jpg"
+                        class="coletionimg"
+                    />
+                    <img
+                        src="imagens/imgcoletion/img3_galaxy.jpg"
+                        class="coletionimg"
+                    />
+                    <img
+                        src="imagens/imgcoletion/img4_sea.jpg"
+                        class="coletionimg"
+                    />
+                    <img
+                        src="imagens/imgcoletion/img5_asianStyle.jpg"
+                        class="coletionimg"
+                    />
+                    <img
+                        src="imagens/imgcoletion/img6_animal.jpg"
+                        class="coletionimg"
+                    />
+                    <img
+                        src="imagens/imgcoletion/img7_signs.jpg"
+                        class="coletionimg"
+                    />
+                    <img
+                        src="imagens/imgcoletion/img8_nature.jpg"
+                        class="coletionimg"
+                    />
                 </div>
             </div>
         </div>
@@ -223,87 +284,101 @@
         <!--footer-->
 
         <footer class="footer">
-            <div class="coluna-footer">
+            <div class="footer-coluna-left">
                 <div class="text">
-                    <h3>Email</h3>
-                    <p>care@thayajewels.com</p>
+                    <ul>
+                        <h3>Email</h3>
+                        <li><p>care@thayajewels.com</p></li>
+                    </ul>
                 </div>
+                <div class="text info">
+                    <ul>
+                        <h4>Info</h4>
+                        <li><p>terms and conditions</p></li>
+                        <li><p>shipping and return</p></li>
+                        <li><p>contact us</p></li>
 
-                <p>terms and conditions</p>
-                <p>shipping and return</p>
-                <p>contact us</p>
-
-                <a href="politica e privacidade .html">
-                    Politica e Privacidade</a
-                >
-                <br />
-                <a
-                    href="https://www.livroreclamacoes.pt/Inicio/"
-                    target="_blank"
-                >
+                        <li>
+                            <a href="politica e privacidade .html">
+                                Politica e Privacidade</a
+                            >
+                        </li>
+                        <br />
+                        <li>
+                            <a
+                                href="https://www.livroreclamacoes.pt/Inicio/"
+                                target="_blank"
+                            >
+                                <img
+                                    id="livro_reclamacoes"
+                                    src="livro_reclamacoes.png"
+                                    width="100px"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-coluna-right">
+                <div class="redessociais">
+                    <h3>Redes Sociais</h3>
+                    <!--rever logos-->
                     <img
-                        id="livro_reclamacoes"
-                        src="livro_reclamacoes.png"
-                        width="100px"
+                        src="imagens/iconfooter/socialmidia/face_bgw.svg"
+                        width="35px"
                     />
-                </a>
-            </div>
-            <div class="redessociais">
-                <h3>Redes Sociais</h3>
-                <!--rever logos-->
-                <img
-                    src="imagens/iconfooter/socialmidia/face_bgw.svg"
-                    width="35px"
-                />
-                <!--face-->
-                <img
-                    src="imagens/iconfooter/socialmidia/insta_bgw.svg"
-                    width="35px"
-                />
-                <!--insta-->
-                <img
-                    src="imagens/iconfooter/socialmidia/twiter_bgw.svg"
-                    width="35px"
-                />
-                <!--twiter-->
-                <img
-                    src="imagens/iconfooter/socialmidia/youtube_bgw.svg"
-                    width="35px"
-                />
-                <!--youtube-->
-                <img
-                    src="imagens/iconfooter/socialmidia/pinterest_bgw.svg"
-                    width="35px"
-                />
-                <!--pinterest-->
-                <img
-                    src="imagens/iconfooter/socialmidia/mail_bgw.svg"
-                    width="35px"
-                />
-                <!--mail-->
-            </div>
-
-            <div class="metedos de pagamento">
-                <img
-                    src="imagens/iconfooter/logopayment/Visa_w.png"
-                    width="50px"
-                />
-                <!--visa-->
-                <img
-                    src="imagens/iconfooter/logopayment/Mastercard_w.png"
-                    width="50px"
-                />
-                <!--master card-->
-                <img
-                    src="imagens/iconfooter/logopayment/americanExpress_w.png"
-                    width="50px"
-                />
-                <!--american card-->
-                <img
-                    src="imagens/iconfooter/logopayment/PayPal_w.png"
-                    width="50px"
-                />
-                <!--paypal-->
+                    <!--face-->
+                    <img
+                        src="imagens/iconfooter/socialmidia/insta_bgw.svg"
+                        width="35px"
+                    />
+                    <!--insta-->
+                    <img
+                        src="imagens/iconfooter/socialmidia/twiter_bgw.svg"
+                        width="35px"
+                    />
+                    <!--twiter-->
+                    <img
+                        src="imagens/iconfooter/socialmidia/youtube_bgw.svg"
+                        width="35px"
+                    />
+                    <!--youtube-->
+                    <img
+                        src="imagens/iconfooter/socialmidia/pinterest_bgw.svg"
+                        width="35px"
+                    />
+                    <!--pinterest-->
+                    <img
+                        src="imagens/iconfooter/socialmidia/mail_bgw.svg"
+                        width="35px"
+                    />
+                    <!--mail-->
+                </div>
+                <br />
+                <div class="metedospagamento">
+                    <h3>Metedos de pagamento</h3>
+                    <br />
+                    <img
+                        src="imagens/iconfooter/logopayment/Visa_w.png"
+                        width="50px"
+                    />
+                    <!--visa-->
+                    <img
+                        src="imagens/iconfooter/logopayment/Mastercard_w.png"
+                        width="50px"
+                    />
+                    <!--master card-->
+                    <img
+                        src="imagens/iconfooter/logopayment/americanExpress_w.png"
+                        width="50px"
+                    />
+                    <!--american card-->
+                    <img
+                        src="imagens/iconfooter/logopayment/PayPal_w.png"
+                        width="50px"
+                    />
+                    <!--paypal-->
+                </div>
             </div>
             <div class="copyright">
                 <p>Copyright ©2022 Thaya. All Right Reserved</p>
