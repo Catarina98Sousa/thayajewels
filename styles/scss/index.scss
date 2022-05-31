@@ -1,8 +1,11 @@
 /*imports*/
 @import "variables.scss";
 @import "reset.scss";
+@import "grid2.scss";
 @import "buttons.scss";
 @import "footer.scss";
+//produt
+@import "produt-ring.scss";
 
 body {
     width: 100%;
@@ -25,7 +28,7 @@ nav.text-right {
     width: 100%;
     text-align: right;
     margin-top: 6px;
-    margin-right: 40px;
+    margin-right: 50px;
 }
 .extra {
     width: 14px;
@@ -52,8 +55,8 @@ header {
 }
 .menu {
     position: relative;
-    left: 70px;
-    gap: 30px;
+    left: 50px;
+    gap: 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -65,7 +68,7 @@ header {
 .icon-menu {
     position: relative;
     top: 5px;
-    right: 10px;
+    right: 50px;
 }
 img.icon {
     width: 100%;
@@ -93,12 +96,15 @@ img.icon {
 
 /*content home page*/
 
-.main {
+/* .main {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 100px;
     margin-right: 250px;
     margin-left: 250px;
-    margin-top: 100px;
-    max-width: fit-content;
-}
+} */
 
 .section1 {
     display: flex;
