@@ -19,3 +19,16 @@ a {
     }*/
     //ver os a que quero underline ^ tem de ir no index.scss
 }
+
+body {
+    width: 100%;
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
+    justify-content: center;
+    position: absolute;
+    background: $bgbody;
+}
+a {
+    color: black;
+    font-weight: 700;
+}
