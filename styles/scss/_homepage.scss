@@ -15,141 +15,157 @@
 // -------------- titles sections ballons -----------------
 
 .section1 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 .title-primary {
-    font-size: 26px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
-    border-radius: 30px;
-    border: 5px solid #aed2f2;
-    color: $fontTitle;
-    background-color: #aed2f2;
+  font-size: 26px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  border-radius: 30px;
+  border: 5px solid #aed2f2;
+  color: $fontTitle;
+  background-color: #aed2f2;
 }
 
 .text {
-    text-align: justify;
+  text-align: justify;
 }
 
 /*buttons plus + */
 a.plus {
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 30px;
-    border: 5px solid #aed2f2;
-    color: #212121;
-    background-color: #aed2f2;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 30px;
+  border: 5px solid #aed2f2;
+  color: #212121;
+  background-color: #aed2f2;
 }
 
 .section2 {
-    @extend .section1;
+  @extend .section1;
 
-    //espaço entre elementos
-    .pad-50 {
-        padding-top: 50px;
-        padding-bottom: 30px;
-    }
+  //espaço entre elementos
+  .pad-50 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
 
-    // -------------- promoctions -----------------
-    .promo-img {
-        width: 100%;
-        display: flex;
-        img {
-            width: 100%;
-            max-width: 510px;
-            gap: 2px;
-        }
-    }
+  // -------------- promoctions -----------------
+}
+
+.promo-img {
+  img {
+    width: 100%;
+  }
 }
 
 // -------------- category -----------------
 
 .category {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 
-    a.icon-category {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-    }
-    @mixin button-category {
-        font-size: 30px;
-        border-radius: 102px;
-        height: 140px;
-        padding: 30px;
-        margin-bottom: 20px;
-        min-width: 280px;
-    }
-    .colar {
-        @include button-category;
-        background: linear-gradient(
-            109.15deg,
-            rgba(196, 196, 196, 0) 0%,
-            $colorP_red 100%
-        );
-    }
-    .bracelet {
-        @include button-category;
-        background: linear-gradient(
-            109.15deg,
-            rgba(196, 196, 196, 0) 0%,
-            $colorP_yellow 100%
-        );
-    }
-    .rings {
-        @include button-category;
-        background: linear-gradient(
-            109.15deg,
-            rgba(196, 196, 196, 0) 0%,
-            $colorP_blue 100%
-        );
-    }
-    .earings {
-        @include button-category;
-        background: linear-gradient(
-            109.15deg,
-            rgba(196, 196, 196, 0) 0%,
-            $colorP_green 100%
-        );
-    }
+  a.icon-category {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  @mixin button-category {
+    font-size: 28px;
+    border-radius: 102px;
+    height: 140px;
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+  .colar {
+    @include button-category;
+    background: linear-gradient(
+      109.15deg,
+      rgba(196, 196, 196, 0) 0%,
+      $colorP_red 100%
+    );
+  }
+  .bracelet {
+    @include button-category;
+    background: linear-gradient(
+      109.15deg,
+      rgba(196, 196, 196, 0) 0%,
+      $colorP_yellow 100%
+    );
+  }
+  .rings {
+    @include button-category;
+    background: linear-gradient(
+      109.15deg,
+      rgba(196, 196, 196, 0) 0%,
+      $colorP_blue 100%
+    );
+  }
+  .earings {
+    @include button-category;
+    background: linear-gradient(
+      109.15deg,
+      rgba(196, 196, 196, 0) 0%,
+      $colorP_green 100%
+    );
+  }
 }
 
+.image-category {
+  max-height: 68px;
+}
 // -------------- colection -----------------
 
 .coletionimg {
-    position: relative;
-    display: inline-flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  position: relative;
+  display: inline-flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
-    img {
-        width: 100%;
-        max-width: 260px;
-        border-radius: 10px;
-    }
+  img {
+    width: 100%;
+    max-width: 260px;
+    border-radius: 10px;
+  }
 
-    &:after {
-        content: " ";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.4);
-        opacity: 0;
-        transition: all 1s;
-        border-radius: 10px;
+  .coletionimg__layer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: all 1s;
+    border-radius: 10px;
+  }
+
+  .coletionimg__description {
+    color: white;
+    transition: 1s;
+    transform: translateY(20px);
+  }
+
+  &:hover {
+    .coletionimg__description {
+      transform: translateY(0);
     }
-    &:hover {
-        &:after {
-            opacity: 1;
-        }
+    .coletionimg__layer {
+      visibility: visible;
+      opacity: 1;
     }
+  }
+}
+
+.banner {
+  margin-top: calc($header-height + 40px);
 }

@@ -1,73 +1,73 @@
 /*nav & header*/ /*fase de experimentaçao. posiçao ainda errada ver mais tarde*/
 nav {
-    font-size: 18px;
+  font-size: 18px;
 }
 nav.text-right {
-    width: 100%;
-    text-align: right;
-    margin-top: 6px;
-    margin-right: 50px;
+  width: 100%;
+  text-align: right;
+  margin-top: 6px;
+  margin-right: 50px;
 }
 .extra {
-    width: 14px;
+  width: 14px;
 }
 header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    height: 93px;
-    background-color: rgb(174, 210, 242);
-    z-index: 20;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  height: $header-height;
+  background-color: rgb(174, 210, 242);
+  z-index: 20;
 }
 
 .geralmenu {
-    position: relative;
-    top: -10px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  position: relative;
+  top: -10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .menu {
-    position: relative;
-    left: 50px;
-    gap: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    a {
-        font-size: 20px;
-    }
+  position: relative;
+  left: 50px;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  a {
+    font-size: 20px;
+  }
 }
 /*problema com posiçao dos icons ver mais tarde*/
 .icon-menu {
-    position: relative;
-    top: 5px;
-    right: 50px;
+  position: relative;
+  top: 5px;
+  right: 50px;
 }
 img.icon {
-    width: 100%;
-    max-width: 55px;
-    padding-left: 17px;
+  width: 100%;
+  max-width: 55px;
+  padding-left: 17px;
 }
 
 /*login/sign up*/ /*yet to be done*/
 
 .form-login {
-    display: none;
-    width: 200px;
+  display: none;
+  width: 200px;
 }
 .pass {
-    color: rgb(87, 193, 255);
+  color: rgb(87, 193, 255);
 }
 .send {
-    background-color: skyblue;
+  background-color: skyblue;
 }
 .send:hover {
-    color: $bgbody;
-    background-color: rgb(0, 0, 0);
-    cursor: pointer;
+  color: $bgbody;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
 }
