@@ -1,50 +1,49 @@
 /*footer*/
 /*footer*/ /*tentar perceber o porque de estar em cima*/
 .footer {
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    font-size: 16px;
-    height: 350px;
-    background-color: $bgfooter;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 16px;
+  height: 350px;
+  background-color: $bgfooter;
 }
 .footer-coluna-left {
-    width: 50%;
-    left: 5vw;
+  width: 50%;
+  left: 5vw;
 }
 .footer-coluna-right {
-    width: 50%;
+  width: 50%;
 }
 
 .text {
-    padding: 25px;
-    padding-left: 260px;
-    font-weight: 600;
-    font-size: 20px;
+  padding: 25px;
+  padding-left: 260px;
+  font-weight: 600;
+  font-size: 20px;
+  color: $fontTextfooter;
+  p {
+    font-weight: 300;
+  }
+  a {
+    font-weight: 300;
     color: $fontTextfooter;
-    p {
-        font-weight: 300;
-    }
-    a {
-        font-weight: 300;
-        color: $fontTextfooter;
-    }
+  }
 }
 .redessociais {
-    color: $fontTextfooter;
-    padding: 25px;
+  color: $fontTextfooter;
+  padding: 25px;
 }
 .metedospagamento {
-    color: $fontTextfooter;
-    padding: 25px;
-    padding-top: 0;
+  color: $fontTextfooter;
+  padding: 25px;
+  padding-top: 0;
 }
 
 .copyright {
-    position: relative;
-    left: 51vw;
-    color: $fontTextfooter;
-    bottom: 10vh;
+  position: relative;
+  left: 51vw;
+  color: $fontTextfooter;
+  bottom: 10vh;
 }
